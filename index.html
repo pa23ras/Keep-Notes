@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome-> while using icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">  
+    <title>Ticket management</title>
+</head>
+<body>
+    <!-- block level -> width of parent element -->
+    <!-- height -> depends on content unless specified -->
+    <div class = "header-container">
+        <!-- Header -->
+        <div class = "color-group_container">
+            <!-- Hello -->
+            <div class="color pink"></div>
+            <div class="color blue"></div>
+            <div class="color green"></div>
+            <div class="color black"></div>
+        </div>
+
+        <div class = "add-cross_container">
+            <div class="plus_container"> 
+                <i class="fas fa-plus tool_icons"></i>
+                <!-- <i class="fa-duotone fa-plus"></i> -->
+            </div>
+            <div class="multiply_container tool_icons"> 
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="lock-unlock_container tool_icons">
+            <div class="lock_container">
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="unlock_container tool_icons active">
+                <i class="fas fa-lock-open"></i>
+             </div>
+        </div>
+        <!-- <input type = "text" class="task_input"> -->
+
+    </div>
+    <div class = "main-container">
+        <!-- this should come from dom -->
+        <!-- Main -->
+        <div class="modal_container shadow">
+            <div class="modal-text_box" contenteditable = "true" >Enter your task here</div>
+            <div class="modal-color_box">
+                <div class="color_picker pink"></div>
+                <div class="color_picker blue"></div>
+                <div class="color_picker green"></div>
+                <div class="color_picker black selected"></div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script 
+    src=
+    "https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
